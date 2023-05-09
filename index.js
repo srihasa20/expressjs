@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 app.listen(5000, function()
 {
-    console.log('App listening on port 3001');
+    console.log('App listening on port 5000');
     connection.connect(function(err)
     {
   if(err) throw err;
