@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+const mysql      = require('mysql');
 require('dotenv').config()
 
 const connection = mysql.createPool({
@@ -6,7 +6,7 @@ const connection = mysql.createPool({
   user     : process.env.MYSQL_USERNAME,
   password : process.env.MYSQL_PASSWORD,
   database : process.env.MYSQL_DB,
-  connectionLimit: 3000,
+  connectionLimit: 5000,
 });
 
 let getConnection = function(callback) {
